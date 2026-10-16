@@ -54,3 +54,37 @@ Batch: DevOps with AWS | AUG26-A530
 Project Status
 
 Project setup in progress.
+
+## Automation Scripts
+
+This project includes three Bash scripts to simplify basic server administration.
+
+### 1. Server Health Check — `scripts/server_health.sh`
+- Displays the current date and server uptime.
+- Reports memory usage.
+- Checks disk usage.
+- Displays the Nginx service status.
+
+### 2. Nginx Monitor — `scripts/nginx_monitor.sh`
+- Checks whether Nginx is running.
+- Attempts to start Nginx if it is stopped.
+- Reports whether the restart was successful.
+
+### 3. Website Backup — `scripts/backup_website.sh`
+- Creates a compressed backup of the website files in `/var/www/html`.
+- Saves backups in the `~/backups` directory.
+- Uses timestamps in backup filenames to distinguish backup versions.
+
+## Technologies Used
+- AWS EC2
+- Ubuntu Linux
+- Nginx
+- Git and GitHub
+- Bash scripting
+- PowerShell and SSH/SCP
+
+## Project Goals
+- Deploy and configure a Linux server on AWS.
+- Host a website using Nginx.
+- Track project files with Git and GitHub.
+- Automate basic server monitoring and website backups.
